@@ -22,7 +22,7 @@ public class HelloController {
   @GetMapping("/greeting")
   public Greeting get() {
     Greeting greeting = new Greeting();
-    greeting.setName("Greetings to Hello World");
+    greeting.setName("Greetings to Hello World" + receiptInQueue);
     System.out.println(receiptInQueue);
     return greeting;
   }
