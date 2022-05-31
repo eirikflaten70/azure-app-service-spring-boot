@@ -1,6 +1,6 @@
 server:
   servlet:
-    context-path: /hello-world
+    context-path: /ReceiptService/api
   port: 8080
 
 environment:
