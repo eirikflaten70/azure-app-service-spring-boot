@@ -3,3 +3,7 @@ server:
     context-path: /hello-world
   port: 8080
 
+environment:
+  jms-queues:
+    receipts-in: receipts-IN
+
