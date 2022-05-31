@@ -8,21 +8,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
-
+@RequestMapping("/hello-world")
 public class HelloController {
-
-@RequestMapping("/")
-
+  
   public String index() {
-      return "Greetings from Azure Spring Apps!";
+    return "Greetings from Azure Spring Apps!";
   }
 
   @GetMapping("/greeting")
-	public Greeting get() {
+  public Greeting get() {
     Greeting greeting = new Greeting();
     greeting.setName("Greetings to Hello World");
-		return greeting;
-	}
+    return greeting;
+  }
 
 }
-
