@@ -5,10 +5,9 @@ import org.springframework.web.bind.annotation.RestController;
 import noaria.no.hellospring.model.Greeting;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+
 
 @RestController
-@RequestMapping("/hello-world")
 public class HelloController {
   
   public String index() {
