@@ -27,4 +27,11 @@ public class HelloController {
     return greeting;
   }
 
+  @GetMapping("/greeting2")
+  public String getGreetings() {
+    final String result = "This is the new greeting - hello so very much Eirik!!";
+    System.out.println(result);
+    return result;
+  }
+
 }
